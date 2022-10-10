@@ -5,6 +5,7 @@ import { LoginManager } from '@nativescript/facebook'
 import Home from './components/Home'
 
 firebase().initializeApp()
+firebase().messaging().showNotificationsWhenInForeground = true;
 LoginManager.init();
   
 new Vue({
